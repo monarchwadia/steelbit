@@ -1,0 +1,17 @@
+{
+  "name": "steelbit",
+  "version": "1.0.0",
+  "author": "Monarch Wadia",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "typescript": "^4.6.3"
+  },
+  "alias": {
+    "steelbit": "./steelbit"
+  }
+}
