@@ -14,7 +14,7 @@ const sampleData = [{
     {
       id: 3,
       type: "box",
-      width: 12,
+      width: "12px",
       color: "rgba(0,0,0,0)"
     },
     {

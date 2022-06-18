@@ -5,9 +5,11 @@ const render = (componentTree: any[], out: HTMLElement) => {
 
     switch (component.type) {
       case "box":
+        console.log(component);
         elem = document.createElement("div");
         elem.style.display = "flex";
         elem.style.flexDirection = component.direction || "vertical";
+        elem.style.width = component.width || "auto";
 
         break;
       case "text":
