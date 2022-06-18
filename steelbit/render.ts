@@ -1,4 +1,6 @@
-const render = (componentTree: any[], out: HTMLElement) => {
+import { Component } from "./types";
+
+const render = (componentTree: Component[], out: HTMLElement) => {
   componentTree.forEach(component => {
     let elem;
     console.log(component);
@@ -14,11 +16,20 @@ const render = (componentTree: any[], out: HTMLElement) => {
         break;
       case "text":
         elem = document.createElement("span");
-        elem.style.fontSize = component.size || 9;
+        elem.style.fontSize = component.size || "9px";
         elem.style.color = component.color || "rgba(0,0,0,1)";
         elem.innerText = component.value || "";
 
         break;
+      
+      case "button":
+        elem = document.createElement("button");
+        elem.style.fontSize = component.size || "9px";
+        elem.style.color = component.color || "rgba(0,0,0,1)";
+        elem.style.backgroundColor = component.backgroundColor || "rgba(255,255,255,1)";
+        elem.onclick = component.onClick ? eval(component.onClick) : undefined;
+        break;
+      
       default:
         elem = document.createElement("div");
         break;
