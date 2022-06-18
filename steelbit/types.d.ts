@@ -21,8 +21,6 @@ export type ButtonComponent = {
   type: "button";
   size: string;
   backgroundColor: string;
-  color: string;
-  value: string;
   onClick: string;
 } & BaseComponent;
 

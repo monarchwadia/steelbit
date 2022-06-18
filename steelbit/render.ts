@@ -25,7 +25,6 @@ const render = (componentTree: Component[], out: HTMLElement) => {
       case "button":
         elem = document.createElement("button");
         elem.style.fontSize = component.size || "9px";
-        elem.style.color = component.color || "rgba(0,0,0,1)";
         elem.style.backgroundColor = component.backgroundColor || "rgba(255,255,255,1)";
         elem.onclick = component.onClick ? eval(component.onClick) : undefined;
         break;

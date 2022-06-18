@@ -35,12 +35,17 @@ const sampleData: Component[] = [
     type: "button",
     size: "12px",
     backgroundColor: "rgba(0,0,0,1)",
-    color: "rgba(255,255,255,1)",
-    value: "ClickMe",
     onClick: `(e) => {
       e.preventDefault();
       alert("clicked!");
-    }`
+    }`,
+    children: [{
+      id: 6,
+      type: "text",
+      size: "12px",
+      color: "rgba(255,255,255,1)",
+      value: "ClickMe!"
+    }]
   }
 ]
 
