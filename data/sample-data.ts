@@ -11,7 +11,7 @@ const sampleData: Component[] = [
       {
         id: 2,
         type: "text",
-        size: "12px",
+        size: "24px",
         color: "rgba(255,0,0,1)",
         value: "Hello"
       },
@@ -19,12 +19,12 @@ const sampleData: Component[] = [
         id: 3,
         type: "box",
         direction: "vertical",
-        width: "12px"
+        width: "24px"
       },
       {
         id: 4,
         type: "text",
-        size: "12px",
+        size: "24px",
         color: "rgba(0,255,0,1)",
         value: "World"
       }
@@ -33,7 +33,7 @@ const sampleData: Component[] = [
   {
     id: 5,
     type: "button",
-    size: "12px",
+    size: "24px",
     backgroundColor: "rgba(0,0,0,1)",
     onClick: `(e) => {
       e.preventDefault();
@@ -42,7 +42,7 @@ const sampleData: Component[] = [
     children: [{
       id: 6,
       type: "text",
-      size: "12px",
+      size: "24px",
       color: "rgba(255,255,255,1)",
       value: "ClickMe!"
     }]
