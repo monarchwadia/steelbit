@@ -1,5 +1,5 @@
 import Steelbit from "steelbit";
-import sampleData from "../data/sample-data";
+import sampleData from "../steelbit/data/sample-data";
 
 const data = document.getElementById("out");
 if (data) {

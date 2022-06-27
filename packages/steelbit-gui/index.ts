@@ -1,4 +1,6 @@
-const { BrowserWindow, app } = require('electron')
+import { BrowserWindow, app } from 'electron';
+import Steelbit from 'steelbit';
+console.log("STEELBIT", Steelbit)
 
 app.on('ready', () => {
   const win = new BrowserWindow({ width: 800, height: 1500 });

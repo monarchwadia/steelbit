@@ -2,7 +2,6 @@ import { On, vnode, VNode, VNodeChildren } from "snabbdom";
 import {h, patch} from "./snabbdomProvider";
 import { Component } from "./types";
 
-
 export default class Steelbit {
   constructor(private outElem: HTMLElement, private componentTree: Component[]) {}
 

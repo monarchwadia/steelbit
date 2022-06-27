@@ -1,0 +1,16 @@
+{
+  "name": "steelbit-gui",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron -r ts-node/register index.ts"
+  },
+  "devDependencies": {
+    "electron": "^19.0.6",
+    "steelbit": "0.0.1"
+  },
+  "dependencies": {
+    "ts-node": "^10.8.1"
+  }
+}
